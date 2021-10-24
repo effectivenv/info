@@ -87,7 +87,7 @@ const fig3 = new Chart(ctx3, {
         labels: ['Health (3)', 'Education (11)', 'Journalism (13)', 'Other (36)'],
         datasets: [{
             indexAxis: 'y',
-            label:'# of developers',
+            label:'dataset',
             data: [3, 11, 13, 36],
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
@@ -186,7 +186,9 @@ var fig5 = new Chart(ctx5, {
 });
 </script>
            <h3>Evaluation Practises</h3>
-         
+           <h4>Inspection methods of evaluation</h4>
+          <div class="pure-g">
+                    <div class="pure-u-1-2">
                   <p class="small"><em>Figure 6: Whether a colleague or external experts review the visualization before its release</em></p>
                
            <canvas id="fig6" class="chart"></canvas>
@@ -198,7 +200,7 @@ const fig6 = new Chart(ctx6, {
         labels: ['Yes (57)', 'No (6)'],
         datasets: [{
             indexAxis: 'y',
-            label:'# of developers',
+            label:'dataset',
             data: [57, 6],
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
@@ -208,9 +210,163 @@ const fig6 = new Chart(ctx6, {
     
 });
 </script>
+                    </div>
+           <div class="pure-u-1-2">
+                  <p class="small"><em>Figure 7: Whether visualisation is reviewed using a set of pre-defined criteria<br /><br /></em></p>
+               
+           <canvas id="fig7" class="chart"></canvas>
+<script>
+const ctx7 = document.getElementById('fig7').getContext('2d');
+const fig7 = new Chart(ctx7, {
+    type: 'bar',
+    data: {
+        labels: ['Yes (20)', 'No (37)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [20, 37],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)']
+        }]
+    },
+    
+});
+</script>
+    </div>
+           <div class="pure-u-1-2">
+          <p class="small"><em>Figure 8: Informal evaluation methods of review</em></p>
+               
+           <canvas id="fig8" class="chart"></canvas>
+<script>
+const ctx8 = document.getElementById('fig8').getContext('2d');
+const fig8 = new Chart(ctx8, {
+    type: 'bar',
+    data: {
+        labels: ['Informal email (5)', 'Informal conversation (11)' , 'Group discussion (19)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [5, 11, 19],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)']
+        }]
+    },
+    
+});
+</script></div>
+            <div class="pure-u-1-2">
+          <p class="small"><em>Figure 9: Reasons given for no colleague or external expert review </em></p>
+               
+           <canvas id="fig9" class="chart"></canvas>
+<script>
+const ctx9 = document.getElementById('fig9').getContext('2d');
+const fig9 = new Chart(ctx9, {
+    type: 'bar',
+    data: {
+        labels: ['There is no budget (1)' , 'There is no expertise available (1)', 'It is unnecessary (2)', 'There is no time (3)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [1,1,2,3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)']
+        }]
+    },
+    
+});
+</script></div>
+          </div>
+                <h4>End-user methods of evaluation</h4>
+                  <div class="pure-g">
+                    <div class="pure-u-1-2">
+                         <p class="small"><em>Figure 10: Whether end-user testing is used to evaluate the narrative viusalisation</em></p>
+               
+           <canvas id="fig10" class="chart"></canvas>
+<script>
+const ctx10 = document.getElementById('fig10').getContext('2d');
+const fig10 = new Chart(ctx10, {
+    type: 'bar',
+    data: {
+        labels: ['Yes (31)', 'No (32)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [31, 32],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)']
+        }]
+    },
+    
+});
+</script>
+                    </div>
+                    <div class="pure-u-1-2">
+                         <p class="small"><em>Figure 11: Reasons given for no end-user testing<br /><br /></em></p>
+               
+           <canvas id="fig11" class="chart"></canvas>
+<script>
+const ctx11 = document.getElementById('fig11').getContext('2d');
+const fig11 = new Chart(ctx11, {
+    type: 'bar',
+    data: {
+        labels: [ 'There is no expertise (5)', 'It is unnecessary (8)','There is no budget (14)' , 'There is no time (21)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [5,8,14,21],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)']
+        }]
+    },
+    
+});
+</script>
+                    </div>
+                  </div>
+                     <p class="small"><em>Figure 12: End-user testing evaluation methods<br /><br /></em></p>
+               
+           <canvas id="fig12"></canvas>
+<script>
+const ctx12 = document.getElementById('fig12').getContext('2d');
+const fig12 = new Chart(ctx12, {
+    type: 'bar',
+    data: {
+        labels: [ 'Think aloud protocol/walk-through (18)', 'Interview (13)','Focus group (8)' , 'Session times (5)', 'Survey/questionnaire (4)', 'Click-tracking (3)', 'Eye-tracking (2)'],
+        datasets: [{
+            label:'dataset',
+            data: [18,13,8,5,4,3,2],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)',
+                '#777',
+                '#ff0',
+                '#000']
+        }]
+    },
+    
+});
+</script>           
             </div>
         </div>
-
+ <div class="element">
+            <div class="question"><button>Raw Data  <i class="fas fa-plus-circle"></i></button>
+            </div>
+            <p>Download the raw survey data</p>
+            <div class="answer hideText">
+                <button href="https://docs.google.com/spreadsheets/d/1wiSPYDbPmQjxHoMK06gc3Ac-V4eo0MCq/edit?usp=sharing&ouid=108092508273590640875&rtpof=true&sd=true" class="button-xlarge pure-button">Anonymised Data</button>
+            </div>
        
         
         </div>
