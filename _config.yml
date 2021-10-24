@@ -1,3 +1,7 @@
 remote_theme: pmarsceill/just-the-docs
 
 search_enabled: false
+
+layout: default
+title: Customization
+nav_order: 4
