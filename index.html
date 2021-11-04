@@ -22,15 +22,12 @@
 
             <p>
             This page provides <strong>supplemental material</strong> for the research project: <em>"Narrative Visualisation Evaluation in the Wild: A Survey of Developers"</em>. </p>
-            
-
-
    <div class="element">
             <div class="question"><button>Survey Data  <i class="fas fa-plus-circle"></i></button>
             </div>
             <p>A series of interactive charts that visualise survey responses</p>
             <div class="answer hideText">
-                <h3>Background Questions</h3>
+              <h3>Background Questions</h3>
                 <div class="pure-g">
                     <div class="pure-u-1-2">
                 <p class="small"><em>Figure 1: Years worked as narrative visualisation developer</em></p>
@@ -142,8 +139,8 @@ const fig3 = new Chart(ctx3, {
 </ul>
 
                     </div>
-                </div>
-            <h3>Elements of Effective Narrative Visualisation</h3>
+                </div> <!-- end bg questions -->
+                <h3>Elements of Effective Narrative Visualisation</h3>
          
                   <p class="small"><em>Figure 5: Elements of an effective NV ordered by developers’ selection and their domain. Click on legend to filter by domain</em></p>
                 <canvas id="fig5"></canvas>
@@ -202,240 +199,9 @@ var fig5 = new Chart(ctx5, {
 <li>Probably could have squeezed into cohesiveness...but consistency of scale.</li>
 <li>Storytelling</li>
                </ul></div>
-                   </div>
-           <h3>Evaluation Practises</h3>
-           <h4>Inspection methods of evaluation</h4>
-          <div class="pure-g">
-                    <div class="pure-u-1-2">
-                  <p class="small"><em>Figure 6: Whether a colleague or external experts review the visualization before its release</em></p>
-               
-           <canvas id="fig6" class="chart"></canvas>
-<script>
-const ctx6 = document.getElementById('fig6').getContext('2d');
-const fig6 = new Chart(ctx6, {
-    type: 'bar',
-    data: {
-        labels: ['Yes (57)', 'No (6)'],
-        datasets: [{
-            indexAxis: 'y',
-            label:'dataset',
-            data: [57, 6],
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)']
-        }]
-    },
-    
-});
-</script>
-                    </div>
-           <div class="pure-u-1-2">
-                  <p class="small"><em>Figure 7: Whether visualisation is reviewed using a set of pre-defined criteria<br /><br /></em></p>
-               
-           <canvas id="fig7" class="chart"></canvas>
-<script>
-const ctx7 = document.getElementById('fig7').getContext('2d');
-const fig7 = new Chart(ctx7, {
-    type: 'bar',
-    data: {
-        labels: ['Yes (20)', 'No (37)'],
-        datasets: [{
-            indexAxis: 'y',
-            label:'dataset',
-            data: [20, 37],
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)']
-        }]
-    },
-    
-});
-</script>
-              </div></div>
-   
-                  <p class="small"><em>Figure 8:  Pre-defined criteria and their domain. Click on legend to filter by domain. </em></p>
-                <canvas id="fig82"></canvas>
-<script>
-const ctx82 = document.getElementById('fig82').getContext('2d');
-var fig82 = new Chart(ctx82, {
-   type: 'bar',
-   data: {
-      labels: ['Data source identified (13)', 'Information density (7)', 'Smart use of colour (15)', 'Data chunking (7)', 'Logical layout (16)', 'Easily recognisable content (12)', 'Interactivity (7)', 'Findability of the visualization on the internet (2)', 'Cohesiveness (16)', 'Ability to keep readers interested (12)', 'Textual content (14)', 'Other (5)', 'Personally relatable content (5)'], // responsible for how many bars are gonna show on the chart
-      // create 12 datasets, since we have 12 items
-      // data[0] = labels[0] (data for first bar - 'Standing costs') | data[1] = labels[1] (data for second bar - 'Running costs')
-      // put 0, if there is no data for the particular bar
-      datasets: [{
-         label: 'Journalism',
-         data: [3,2,3,0,3,3,2,1,3,3,3,0,0],
-         backgroundColor: 'rgba(255, 99, 132, 1)'
-      }, {
-         label: 'Education',
-         data: [1,1,2,1,4,3,0,0,3,3,3,1,1],
-         backgroundColor: 'rgba(54, 162, 235, 1)'
-      }, {
-         label: 'Health',
-         data: [1,0,2,1,2,1,0,0,1,1,0,1,2],
-         backgroundColor: 'rgba(255, 206, 86, 1)'
-      }, {
-         label: 'Other',
-         data: [8,4,8,5,7,5,5,1,9,5,8,3,2],
-         backgroundColor: 'rgba(153, 102, 255, 1)'
-      }]
-   },
-         options: {
-        scales: {
-            x: {
-                stacked: true
-            },
-            y: {
-                stacked: true
-            }
-        }
-    }
-   
-});
-</script>  
-                  <div class="pure-g">
-          
-           <div class="pure-u-1-2">
-               <p class="small"><em>List of 'other' pre-defined criteria </em></p>
-               <ul  class="small otherlist">             
-                   <li>Precision and units are set up</li>
-<li>Data accuracy </li>
-<li>Accuracy of interpretation of source material</li>
-<li>We work with research participants in participatory design sessions to assess comprehensibility, actionability, and appeal.</li>
-<li>Presentation matches source data</li>
-               </ul></div>
-                   </div>
-                                   
- <div class="pure-g">
-           <div class="pure-u-1-2">
-          <p class="small"><em>Figure 9: Informal evaluation methods of review</em></p>
-               
-           <canvas id="fig8" class="chart"></canvas>
-<script>
-const ctx8 = document.getElementById('fig8').getContext('2d');
-const fig8 = new Chart(ctx8, {
-    type: 'bar',
-    data: {
-        labels: ['Informal email (5)', 'Informal conversation (11)' , 'Group discussion (19)'],
-        datasets: [{
-            indexAxis: 'y',
-            label:'dataset',
-            data: [5, 11, 19],
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)']
-        }]
-    },
-    
-});
-</script>  
-                
-            <div class="pure-u-1-2">
-          <p class="small"><em>Figure 10: Reasons given for no colleague or external expert review </em></p>
-               
-           <canvas id="fig9" class="chart"></canvas>
-<script>
-const ctx9 = document.getElementById('fig9').getContext('2d');
-const fig9 = new Chart(ctx9, {
-    type: 'bar',
-    data: {
-        labels: ['There is no budget (1)' , 'There is no expertise available (1)', 'It is unnecessary (2)', 'There is no time (3)'],
-        datasets: [{
-            indexAxis: 'y',
-            label:'dataset',
-            data: [1,1,2,3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(153, 102, 255, 1)']
-        }]
-    },
-    
-});
-                </script></div></div>
-          
-                <h4>End-user methods of evaluation</h4>
-                  <div class="pure-g">
-                    <div class="pure-u-1-2">
-                         <p class="small"><em>Figure 11: Whether end-user testing is used to evaluate the narrative viusalisation</em></p>
-               
-           <canvas id="fig10" class="chart"></canvas>
-<script>
-const ctx10 = document.getElementById('fig10').getContext('2d');
-const fig10 = new Chart(ctx10, {
-    type: 'bar',
-    data: {
-        labels: ['Yes (31)', 'No (32)'],
-        datasets: [{
-            indexAxis: 'y',
-            label:'dataset',
-            data: [31, 32],
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)']
-        }]
-    },
-    
-});
-</script>
-                    </div>
-                    <div class="pure-u-1-2">
-                         <p class="small"><em>Figure 12: Reasons given for no end-user testing<br /><br /></em></p>
-               
-           <canvas id="fig11" class="chart"></canvas>
-<script>
-const ctx11 = document.getElementById('fig11').getContext('2d');
-const fig11 = new Chart(ctx11, {
-    type: 'bar',
-    data: {
-        labels: [ 'There is no expertise (5)', 'It is unnecessary (8)','There is no budget (14)' , 'There is no time (21)'],
-        datasets: [{
-            indexAxis: 'y',
-            label:'dataset',
-            data: [5,8,14,21],
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(153, 102, 255, 1)']
-        }]
-    },
-    
-});
-</script>
-                    </div>
-               </div>
-                     <p class="small"><em>Figure 13: End-user testing evaluation methods<br /><br /></em></p>
-               
-           <canvas id="fig12"></canvas>
-<script>
-const ctx12 = document.getElementById('fig12').getContext('2d');
-const fig12 = new Chart(ctx12, {
-    type: 'bar',
-    data: {
-        labels: [ 'Think aloud protocol/walk-through (18)', 'Interview (13)','Focus group (8)' , 'Session times (5)', 'Survey/questionnaire (4)', 'Click-tracking (3)', 'Eye-tracking (2)'],
-        datasets: [{
-            label:'dataset',
-            data: [18,13,8,5,4,3,2],
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(153, 102, 255, 1)',
-                '#777',
-                '#ff0',
-                '#000']
-        }]
-    },
-    
-});
-</script>           
-    
-                </div></div></div></div>
+                   </div> <!-- end elements -->
+      
+               </div></div>
  <div class="element">
             <div class="question"><button>Raw Data  <i class="fas fa-plus-circle"></i></button>
             </div>
