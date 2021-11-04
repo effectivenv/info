@@ -412,7 +412,32 @@ const fig11 = new Chart(ctx11, {
 </script>
                     </div>
                 </div>
-                
+                  <p class="small"><em>Figure 13: End-user testing evaluation methods<br /><br /></em></p>
+               
+           <canvas id="fig12"></canvas>
+<script>
+const ctx12 = document.getElementById('fig12').getContext('2d');
+const fig12 = new Chart(ctx12, {
+    type: 'bar',
+    data: {
+        labels: [ 'Think aloud protocol/walk-through (18)', 'Interview (13)','Focus group (8)' , 'Session times (5)', 'Survey/questionnaire (4)', 'Click-tracking (3)', 'Eye-tracking (2)'],
+        datasets: [{
+            label:'dataset',
+            data: [18,13,8,5,4,3,2],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)',
+                '#777',
+                '#ff0',
+                '#000']
+        }]
+    },
+    
+});
+</script>           
+    
                </div></div>
  <div class="element">
             <div class="question"><button>Raw Data  <i class="fas fa-plus-circle"></i></button>
