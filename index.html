@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -305,6 +306,57 @@ var fig82 = new Chart(ctx82, {
 <li>Presentation matches source data</li>
                </ul></div>
                    </div> <!-- end review -->
+                   
+                   <div class="pure-g">
+           <div class="pure-u-1-2">
+          <p class="small"><em>Figure 9: Informal evaluation methods of review</em></p>
+               
+           <canvas id="fig8" class="chart"></canvas>
+<script>
+const ctx8 = document.getElementById('fig8').getContext('2d');
+const fig8 = new Chart(ctx8, {
+    type: 'bar',
+    data: {
+        labels: ['Informal email (5)', 'Informal conversation (11)' , 'Group discussion (19)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [5, 11, 19],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)']
+        }]
+    },
+    
+});
+</script>  
+                
+            <div class="pure-u-1-2">
+          <p class="small"><em>Figure 10: Reasons given for no colleague or external expert review </em></p>
+               
+           <canvas id="fig9" class="chart"></canvas>
+<script>
+const ctx9 = document.getElementById('fig9').getContext('2d');
+const fig9 = new Chart(ctx9, {
+    type: 'bar',
+    data: {
+        labels: ['There is no budget (1)' , 'There is no expertise available (1)', 'It is unnecessary (2)', 'There is no time (3)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [1,1,2,3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)']
+        }]
+    },
+    
+});
+                </script></div></div>
+          
       
                </div></div>
  <div class="element">
