@@ -385,7 +385,33 @@ const fig10 = new Chart(ctx10, {
     
 });
 </script>
-                    </div></div>
+   </div>
+                 <div class="pure-u-1-2">
+                         <p class="small"><em>Figure 12: Reasons given for no end-user testing<br /><br /></em></p>
+               
+           <canvas id="fig11" class="chart"></canvas>
+<script>
+const ctx11 = document.getElementById('fig11').getContext('2d');
+const fig11 = new Chart(ctx11, {
+    type: 'bar',
+    data: {
+        labels: [ 'There is no expertise (5)', 'It is unnecessary (8)','There is no budget (14)' , 'There is no time (21)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [5,8,14,21],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)']
+        }]
+    },
+    
+});
+</script>
+                    </div>
+                </div>
                 
                </div></div>
  <div class="element">
