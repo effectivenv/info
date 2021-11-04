@@ -331,7 +331,34 @@ const fig8 = new Chart(ctx8, {
     },
     
 });
-</script>  </div></div>
+</script>  </div>
+      
+      
+      <div class="pure-u-1-2">
+          <p class="small"><em>Figure 10: Reasons given for no colleague or external expert review </em></p>
+               
+           <canvas id="fig9" class="chart"></canvas>
+<script>
+const ctx9 = document.getElementById('fig9').getContext('2d');
+const fig9 = new Chart(ctx9, {
+    type: 'bar',
+    data: {
+        labels: ['There is no budget (1)' , 'There is no expertise available (1)', 'It is unnecessary (2)', 'There is no time (3)'],
+        datasets: [{
+            indexAxis: 'y',
+            label:'dataset',
+            data: [1,1,2,3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(153, 102, 255, 1)']
+        }]
+    },
+    
+});
+                </script></div>
+      </div>
                </div></div>
  <div class="element">
             <div class="question"><button>Raw Data  <i class="fas fa-plus-circle"></i></button>
