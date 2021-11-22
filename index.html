@@ -531,16 +531,33 @@ const fig12 = new Chart(ctx12, {
         labels: [ 'Think aloud protocol/walk-through (18)', 'Interview (13)','Focus group (8)' , 'Session times (5)', 'Survey/questionnaire (4)', 'Click-tracking (3)', 'Eye-tracking (2)'],
         datasets: [{
             label:'dataset',
-            data: [18,13,8,5,4,3,2],
-            backgroundColor: [
-                'rgba(163, 211, 156, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(153, 102, 255, 1)',
-                '#777',
-                '#ff0',
-                '#000']
-        }]
+              datasets: [{
+         label: 'Journalism',
+         data: [1,1,1,1,1,1,0],
+         backgroundColor: 'rgba(163, 211, 156, 1)'
+      }, {
+         label: 'Education',
+         data: [3,0,0,0,0,0,1],
+         backgroundColor: 'rgba(54, 162, 235, 1)'
+      }, {
+         label: 'Health',
+         data: [1,2,0,0,0,1,0],
+         backgroundColor: 'rgba(255, 206, 86, 1)'
+      }, {
+         label: 'Other',
+         data: [13,10,7,4,3,1,1],
+         backgroundColor: 'rgba(153, 102, 255, 1)'
+      }]
+   },
+         options: {
+        scales: {
+            x: {
+                stacked: true
+            },
+            y: {
+                stacked: true
+            }
+        }
     },
     
 });
