@@ -529,22 +529,22 @@ const ctx12 = document.getElementById('fig12').getContext('2d');
 const fig12 = new Chart(ctx12, {
     type: 'bar',
     data: {
-        labels: [ 'Think aloud protocol/walk-through (18)', 'Interview (13)','Focus group (8)' , 'Session times (5)', 'Survey/questionnaire (4)', 'Click-tracking (3)', 'Eye-tracking (2)'],
+        labels: [ 'Think aloud protocol/walk-through (18)', 'Interview (13)','Focus group (8)' , 'Other (6)','Session times (5)', 'Survey/questionnaire (4)', 'Click-tracking (3)', 'Eye-tracking (2)'],
          datasets: [{
          label: 'Journalism',
-         data: [1,1,1,1,1,1,0],
+         data: [1,1,1,2,1,1,1,0],
          backgroundColor: 'rgba(163, 211, 156, 1)'
       }, {
          label: 'Education',
-         data: [3,0,0,0,0,0,1],
+         data: [3,0,0,0,0,0,0,1],
          backgroundColor: 'rgba(54, 162, 235, 1)'
       }, {
          label: 'Health',
-         data: [1,2,0,0,0,1,0],
+         data: [1,2,0,1,0,0,1,0],
          backgroundColor: 'rgba(255, 206, 86, 1)'
       }, {
          label: 'Other',
-         data: [13,10,7,4,3,1,1],
+         data: [13,10,7,3,4,3,1,1],
          backgroundColor: 'rgba(153, 102, 255, 1)'
       }]
    },
