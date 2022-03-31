@@ -356,22 +356,22 @@ const ctx8 = document.getElementById('fig8').getContext('2d');
 const fig8 = new Chart(ctx8, {
     type: 'bar',
     data: {
-        labels: ['Informal email (5)', 'Informal conversation (11)' , 'Group discussion (19)'],
+        labels: ['Other (2)','Informal email (5)', 'Informal conversation (11)' , 'Group discussion (19)'],
           datasets: [{
          label: 'Journalism',
-         data: [0,2,6],
+         data: [0,0,2,6],
          backgroundColor: 'rgba(163, 211, 156, 1)'
       }, {
          label: 'Education',
-         data: [2,2,2],
+         data: [0,2,2,2],
          backgroundColor: 'rgba(54, 162, 235, 1)'
       }, {
          label: 'Health',
-         data: [1,0,0],
+         data: [0,1,0,0],
          backgroundColor: 'rgba(255, 206, 86, 1)'
       }, {
          label: 'Other',
-         data: [2,7,11],
+         data: [0,2,7,11],
          backgroundColor: 'rgba(153, 102, 255, 1)'
       }]
    },
